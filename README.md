@@ -1,7 +1,7 @@
 # gitARK
 A rolonic ark built on git.
 
-The basic idea is to use git as a repository for rolons, i.e. a ark.
+The basic idea is to use git as a repository for rolons, i.e. an ark.
 
 Files in the repository are rolons in the ark, while commits are the journal entries.
 
