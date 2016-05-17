@@ -16,7 +16,9 @@ The [jgit](https://git-scm.com/book/en/v2/Embedding-Git-in-your-Applications-JGi
 the [clj-jgit](https://github.com/clj-jgit/clj-jgit) library will be used to make commits and to
 perform commit queries.
 
-Looks helpful: [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+Looks helpful: 
+- [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+- [getting started with jgit](http://www.codeaffine.com/2015/12/15/getting-started-with-jgit/)
 
 ## docs
 - [file content](docs/file-content.md)
