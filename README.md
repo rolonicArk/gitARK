@@ -20,6 +20,9 @@ Looks helpful:
 - [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
 - [getting started with jgit](http://www.codeaffine.com/2015/12/15/getting-started-with-jgit/)
 - [embedding jgit](http://alblue.bandlem.com/2013/11/embedding-jgit.html)
+- [jgit cookbook](https://github.com/centic9/jgit-cookbook)
+- [Java implementation of git](http://git.eclipse.org/c/jgit/jgit.git/tree/org.eclipse.jgit/src/org/eclipse/jgit/api)
+- [more jgit goodness](http://stackoverflow.com/questions/1685228/how-to-cat-a-file-in-jgit/7427658#7427658)
 
 ## docs
 - [file content](docs/file-content.md)
