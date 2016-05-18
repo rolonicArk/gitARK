@@ -37,4 +37,6 @@ Looks helpful:
 - [more jgit goodness](http://stackoverflow.com/questions/1685228/how-to-cat-a-file-in-jgit/7427658#7427658)
 
 ## docs
-- [file content](docs/file-content.md)
+- [example1 rolon](docs/rolon-example1.md)
+- [bang, tick, star & cash](https://github.com/rolonicArk/gitARK/blob/master/docs/Bang-Tick-Star-Cash.txt)
+- [rolonics terminology](https://github.com/rolonicArk/gitARK/blob/master/docs/Rolonics%20Terminology.pdf)
