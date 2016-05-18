@@ -14,3 +14,6 @@ The children and childOf descriptors are a special case, as childOf does not app
 but is generated or deleted when a children descriptor in a rolon.md file is updated. 
 The value of a children descriptor is a list of the pathnames of the child rolons relative to the rolons directory.
 Similarly the value of a childof descriptor is the pathname of the parent rolon, again relative to the rolons directory.
+
+`norm's add on descriptor
+This is a test of adding a descriptor
