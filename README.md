@@ -3,7 +3,7 @@ A rolonic ark built on git.
 
 The basic idea is to use git as a repository for rolons, i.e. an ark.
 
-There are 3 top-level directories in the repository.
+There are 3 top-level directories in the repository:
 - .git, which as usual holds git internal files.
 - rolons, which holds all the rolon directories, one directory per rolon. And
 - classifiers, which holds the classifier directories, one directory per classifier type.
