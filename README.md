@@ -3,7 +3,12 @@ A rolonic ark built on git.
 
 The basic idea is to use git as a repository for rolons, i.e. an ark.
 
-Files in the repository are rolons in the ark, while commits are the journal entries.
+There are 3 top-level directories in the repository.
+- .git, which as usual holds git internal files.
+- rolons, which holds all the rolon directories, one directory per rolon. And
+- classifiers, which holds the classifier directories, one directory per classifier type.
+
+Rolons are .md files in the repository, while commits are the journal entries.
 
 GitARK would not make use of any git features aside from commits and commit queries. 
 This allows the full range of git tools for managing an ark. 
