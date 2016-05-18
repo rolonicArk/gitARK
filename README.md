@@ -35,6 +35,7 @@ Looks helpful:
 - [jgit cookbook](https://github.com/centic9/jgit-cookbook)
 - [Java implementation of git](http://git.eclipse.org/c/jgit/jgit.git/tree/org.eclipse.jgit/src/org/eclipse/jgit/api)
 - [more jgit goodness](http://stackoverflow.com/questions/1685228/how-to-cat-a-file-in-jgit/7427658#7427658)
+- [jgit api](http://download.eclipse.org/jgit/site/4.3.1.201605051710-r/apidocs/index.html)
 
 ## docs
 - [example1 rolon](docs/rolon-example1.md)
