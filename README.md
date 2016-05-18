@@ -10,6 +10,10 @@ There are 3 top-level directories in the repository:
 
 Rolons are .md files in the repository, while commits are the journal entries.
 
+The identity of a rolon is the path name, which should not change. 
+The name of a rolon is held by the name classifier and is quite mutable.
+If no name classifier is given, the rolon name is taken from the name of the rolon directory.
+
 GitARK would not make use of any git features aside from commits and commit queries. 
 This allows the full range of git tools for managing an ark. 
 Movement of rolons between arks, for example, can be done with pull requests.
