@@ -10,7 +10,19 @@ This allows the full range of git tools for managing an ark.
 Movement of rolons between arks, for example, can be done with pull requests.
 Or an ark can be created in github which users can synchronize with a copy on their own computer.
 
-Implementation would be clojure in the server and clojurescript in the browser.
+Rolons would be created/edited by hand as .md files, each rolon having its own directory in the repository.
+Generated files in the same directory hold a single classifier or descriptor per file.
+
+Additionally, there will be a separate directory for each classifier used in the ark. 
+Each file in a classifier directory is for a classifier value and contains a list of all the rolons
+which currently have that classifier/value assignment.
+
+Implementation language would be clojure. 
+The initial program would examine all changed rolon.md files, update the secondary files generated from
+the rolon files, and then check in all updated files.
+
+Subsequent enhancements would support various queries, including changes over time.
+Queries for other than current time would make use of git commit structures.
 
 The [jgit](https://git-scm.com/book/en/v2/Embedding-Git-in-your-Applications-JGit) library and/or 
 the [clj-jgit](https://github.com/clj-jgit/clj-jgit) library will be used to make commits and to
