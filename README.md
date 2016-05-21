@@ -1,30 +1,48 @@
 # gitARK
-A rolonic ark built on git.
+A rolonic ark built on git and integrated with slack.
 
-The basic idea is to use git as a repository for rolons, i.e. an ark.
+## Introduction
 
-There are 3 top-level directories in the repository:
-- .git, which as usual holds git internal files.
-- rolons, which holds all the rolon directories, one directory per rolon. And
-- classifiers, which holds the classifier directories, one directory per classifier type.
-
-Rolons are .md files in the repository, while commits are the journal entries.
-
-The identity of a rolon is the path name, which should not change. 
-The name of a rolon is held by the name classifier and is quite mutable.
-If no name classifier is given, the rolon name is taken from the name of the rolon directory.
+The basic idea is to use git as a repository for rolons, i.e. an ark, 
+and to support interaction via slack.
 
 GitARK would not make use of any git features aside from commits and commit queries. 
 This allows the full range of git tools for managing an ark. 
 Movement of rolons between arks, for example, can be done with pull requests.
 Or an ark can be created in github which users can synchronize with a copy on their own computer.
 
-Rolons would be created/edited by hand as .md files, each rolon having its own directory in the repository.
-Generated files in the same directory hold a single classifier or descriptor per file.
+Commands, or performing journal entries, are entered as slack direct messages.
+Messages placed on other slack channels are treated as performing journal entries.
 
-Additionally, there will be a separate directory for each classifier used in the ark. 
-Each file in a classifier directory is for a classifier value and contains a list of all the rolons
-which currently have that classifier/value assignment.
+## Directory Structure
+
+There are 3 top-level directories in the repository:
+- .git, the standard directory used by git for internal files.
+- rolons, which holds all the rolon directories, one directory per rolon. And
+- classifiers, which holds the classifier directories, one directory per classifier type.
+
+Directories under the top-level rolons directory holds ledger, classifier and descriptor files.
+
+Ledger files have the .md file extension and are standard github markdown text files.
+
+Classifier and descriptor files within a rolon directory are named for individual classifier
+and descriptor types. The file content is the current value of the corrisponding classifier or descriptor.
+
+By breaking rolon classifiers and descriptors into individual files, navigation through time is a
+simple matter of filtering the git commit structures with the appropriate rolon descriptor or classifier
+path name.
+
+The names of the directories under the rolons directory are immutable and serve as
+the identity of the corrisponding rolons.
+In contrast, the name of a rolon is a classifier value and is quite mutable.
+If no name classifier is given, the rolon name is taken from the name of the rolon directory.
+
+Directories under the top-level classifiers directory are named for their corrisponding classifier.
+Files under a given classifier directory are named for the classifier value and contain a list
+of the directory names of rolons with that classifier name/value.
+Finding the rolons with a particular name then is simply done by reading the name classifier file.
+
+## Implementation
 
 Implementation language would be clojure. 
 The initial program would examine all changed rolon.md files, update the secondary files generated from
